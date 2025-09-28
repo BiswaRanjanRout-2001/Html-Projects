@@ -1,0 +1,49 @@
+<!-- Survey form -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+ </head>
+ <body>
+    <h1>Online Survey</h1>
+    <p>Please take a moment to complete the survey.</p>
+
+    <form action="/action.php">
+        
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="enter your name" required>
+            <br><br>
+        </div>
+
+        <div>
+            <label for="age">Age: </label>
+            <input type="number" name="age" id="age" placeholder="enter your age" max="100" required>
+            <br><br>
+        </div>
+
+        <div>
+            <label for="favColor">Favorite Color: </label>
+            <select name="favColor" id="favColor">
+                <option value="black">Black</option>
+                <option value="blue">Blue</option>
+                <option value="white">White</option>
+                <option value="red">Red</option>
+            </select>
+            <br><br>
+        </div>
+
+        <div>
+            <label for="feedback">Your Feedback:</label>
+            <br>
+            <textarea name="Feedback" id="feedback" rows="4" cols="30" placeholder="type here..."></textarea>
+            <br><br>
+        </div>
+        <button type="submit">Submit</button>
+
+        
+    </form>
+ </body>
+ </html>
