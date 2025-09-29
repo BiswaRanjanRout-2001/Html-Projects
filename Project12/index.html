@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form
+</title>
+</head>
+<body>
+    <header>
+        <h1>Student Registration Form</h1>
+        <p>Please fill out the details below:</p>
+    </header>
+
+    <main>
+        <form action="#">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <div>
+                    <label for="fname">First Name:</label>
+                    <br>
+                    <input type="text" name="fname" id="fname" required>
+                </div>
+                <br>
+
+                <div>
+                    <label for="lname">Last Name:</label>
+                    <br>
+                    <input type="text" name="lname" id="lname" required>
+                </div>
+                <br>
+
+                <div><label for="email">Email:</label>
+                    <br>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <br>
+
+                <div>
+                    <label for="mobNo">Phone:</label>
+                    <br>
+                    <input type="tel" name="mobNo" id="mobNo" required>
+                </div>
+                <br>
+
+                <div>
+                    <label for="gender">Gender:</label>
+                    <br>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="other" value="other">
+                    <label for="male">Other</label>
+                </div>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Academic Information</legend>
+
+                <div>
+                    <label for="course">Course</label>
+                    <br>
+                    <select name="course" id="course">
+                        <option>Select Course</option>
+                        <option value="btech">B.tech</option>
+                        <option value="mca">MCA</option>
+                        <option value="mba">Mba</option>
+                    </select>
+                </div>
+                <br>
+
+                <div>
+                    <label for="yos">Year of study:</label>
+                    <br>
+                    <select name="yos" id="yos">
+                        <option>Select year</option>
+                        <option value="1st">1st year</option>
+                        <option value="2nd">2nd year</option>
+                        <option value="3rd">3rd year</option>
+                        <option value="4th">4th year</option>
+                    </select>
+                </div>
+
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Feedback / Notes</legend>
+
+                <div>
+                    <label for="comments">Comments: </label>
+                    <br>
+                    <textarea name="comments" id="comments" rows="4" cols="40" placeholder="enter your comment here..."></textarea>
+                </div>
+            </fieldset>
+            <br>
+
+            <button type="submit">Register</button>
+        </form>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy;2025 Student Registration Form</p>
+    </footer>
+</body>
+</html>
